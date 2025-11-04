@@ -155,7 +155,66 @@ print("a media desses numeros é: ", media1)
 #=======================================================================================================
 numtab= int(input("Digite um número para ver sua tabuada : "))
 
-print(f"\nTabuada do {numtab}:")
+print(f"Tabuada do {numtab}:")
 
 for B in range(1, 11):
     print(f"{numtab} x {B} = {numtab * B}")
+#=======================================================================================================
+#Eexercicio 16
+#=======================================================================================================
+NumRev=[]
+for d in range (5):
+    numm= float(input(f"digite os numeros dejados {d+1}: "))
+    NumRev.append(numm)
+print("essa é a ordem inversa dos numeros")
+for numm in reversed(NumRev):
+    print (numm)
+
+#=======================================================================================================
+#Eexercicio 17
+#=======================================================================================================
+soma=0
+for t in range(5):
+    notas=float(input(f"digite a nota do aluno {t+1}: "))
+    soma+= notas
+MedGrupo= soma /5
+print("A media desses cinco alunos é: ", MedGrupo)
+
+#=======================================================================================================
+#Eexercicio 18
+#=======================================================================================================
+pp=float(input("escreva um numero: "))
+if pp % 2==0:
+    print("esse numero é par: ", pp)
+elif pp==0:
+    print("esse é o numero zero", pp)
+else:
+    print("esse numero ", pp, "é impar")
+#=======================================================================================================
+#Eexercicio 19
+#=======================================================================================================
+ç=float(input("escreva o primeiro numero: "))
+çl=float(input("escolha o segundo numero: "))
+if ç<çl:
+    print("o maior desses numeros é o: ", çl)
+elif ç == çl:
+    print("os numeros inseridos são iguais")
+else:
+    print("o maior desses numeros é o: ", ç)
+ 
+#=======================================================================================================
+#Eexercicio 20
+#=======================================================================================================
+p= int(input("digite o numero desejado: "))
+if p <= 1:
+  print("O numero ", p, "nao é primo")
+else:
+    primo = True
+    for i in range(2, p):
+        if p % i == 0:
+            primo = False
+            break
+            print("o numero", p,"nao é primo")
+          
+if primo: print("o numero", p, "é primo")
+else: print("o numero nao é primo")
